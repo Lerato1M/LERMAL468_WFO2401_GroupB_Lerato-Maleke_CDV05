@@ -1,0 +1,204 @@
+/* Reset styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, table, tr, th, td, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: large;
+  position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+/* Create a pseudo-element for the background with reduced opacity */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images\background-picture.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  opacity: 50%; /* Set the opacity to 10% */
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+/* Container for page layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some padding */
+  position: relative; /* Ensure stacking context */
+  z-index: 1; /* Ensure it's above the pseudo-element */
+}
+
+/* MENU SECTION */
+.main-panel {
+  background-color: #dda6b5; /* Fourth color */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-panel .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* First color */
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #f3d7ca; /* Second color */
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #c86b85; /* Third color */
+}
+
+/* MAIN BANNER */
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.banner-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.banner-content span {
+  color: #ffffff; /* Dark text */
+  font-size: 36px;
+  background-color: #c86b85;
+}
+
+.banner-content h1, .banner-content h2 {
+  color: #ffffff; /* Dark text */
+  background-color:#c86b85;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ABOUT US SECTION */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 20px;
+
+}
+
+.about-text h2 {
+  color: #ffffff; /* Brown */
+  background-color: #c86b85;
+}
+
+.contact-details table {
+  margin-top: 20px;
+}
+
+/* SKILLS SECTION */
+.skills {
+  color: #ffffff;
+  margin-top: 30px;
+  background-color: #c86b85;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill b {
+  display: inline-block;
+  width: 100px;
+}
+
+.skill span {
+  display: inline-block;
+  width: 50px;
+}
+
+.skill div {
+  background-color: #c86b85; 
+  height: 10px;
+}
+
+/* EDUCATION SECTION */
+.edu-exp h2 {
+  color: #f267f7cb; 
+}
+
+/* CONTACT US SECTION */
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333; /* Dark border */
+}
+
+.contact-form button {
+  background-color: #c86b85; 
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-details div {
+  margin-top: 20px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color:#dda6b5; /* Dark background */
+  color: #f5f5f5; /* Light text */
+  padding: 20px 0;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  border: 1px solid #f805bb; /* Brown */
+  color: #110e10; 
+  padding: 10px;
+}
+
+.copyright {
+  text-align: center;
+}
